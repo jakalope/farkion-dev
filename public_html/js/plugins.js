@@ -3,5 +3,5 @@
 var $plugins =
 [
 {"name":"Community_Basic","status":true,"description":"Basic plugin for manipulating important parameters.","parameters":{"cacheLimit":"20","screenWidth":"816","screenHeight":"624","changeWindowWidthTo":"","changeWindowHeightTo":"","renderingMode":"auto","alwaysDash":"off"}},
-{"name":"MBS_MobileDirPad","status":true,"description":"This script creates a DirPad and a action button for touch\ndevices in order to make the movement better.\n<MBS MobileDirPad>","parameters":{"DPad Image":"./img/system/DirPad.png","ActionButton Image":"./img/system/ActionButton.png","CancelButton Image":"./img/system/CancelButton.png","Button Size":"40","DPad Position":"128; 452","ActionButton Position":"688; 452","CancelButton Position":"64; 64","Opacity":"200","Hide Duration":"15","PC Debug":"false","Only in Map":"false"}}
+{"name":"MBS_MobileDirPad","status":true,"description":"This script creates a DirPad and a action button for touch\ndevices in order to make the movement better.\n<MBS MobileDirPad>","parameters":{"DPad Image":"./img/system/DirPad.png","ActionButton Image":"./img/system/ActionButton.png","CancelButton Image":"./img/system/CancelButton.png","Button Size":"40","DPad Position":"128; 452","ActionButton Position":"688; 452","CancelButton Position":"750; 64","Opacity":"200","Hide Duration":"15","PC Debug":"false","Only in Map":"false"}}
 ];
