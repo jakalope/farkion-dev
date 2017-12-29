@@ -1,0 +1,9 @@
+[
+null,
+{"id":1,"battlerName":"Actor2_1","characterIndex":0,"characterName":"Actor2","classId":1,"equips":[1,1,2,3,0],"faceIndex":0,"faceName":"Actor2","traits":[{"code":11,"dataId":1,"value":1}],"initialLevel":1,"maxLevel":99,"name":"Clyde","nickname":"","note":"","profile":""},
+{"id":2,"battlerName":"Vinja","characterIndex":0,"characterName":"Vinja","classId":2,"equips":[0,0,2,3,0],"faceIndex":0,"faceName":"Vinja","traits":[{"code":44,"dataId":3,"value":1}],"initialLevel":1,"maxLevel":99,"name":"Lady Bee","nickname":"Bee","note":"","profile":""},
+{"id":3,"battlerName":"Gorn","characterIndex":0,"characterName":"Gorn","classId":3,"equips":[3,0,2,3,0],"faceIndex":0,"faceName":"Gorn","traits":[],"initialLevel":1,"maxLevel":99,"name":"Thorn","nickname":"","note":"","profile":""},
+{"id":4,"battlerName":"","characterIndex":1,"characterName":"kids_walk","classId":1,"equips":[9,14,7,11,0],"faceIndex":0,"faceName":"kids_faces","traits":[{"code":11,"dataId":1,"value":1}],"initialLevel":1,"maxLevel":99,"name":"Isaac","nickname":"","note":"","profile":""},
+{"id":5,"battlerName":"","characterIndex":2,"characterName":"kids_walk","classId":4,"equips":[4,0,2,3,4],"faceIndex":1,"faceName":"kids_faces","traits":[{"code":51,"dataId":5,"value":1}],"initialLevel":1,"maxLevel":99,"name":"Pfeiffer","nickname":"","note":"","profile":""},
+{"id":6,"battlerName":"helper_green","characterIndex":6,"characterName":"helpers","classId":3,"equips":[0,0,0,0,0],"faceIndex":6,"faceName":"helpers","traits":[],"initialLevel":1,"maxLevel":99,"name":"Able","nickname":"","note":"","profile":""}
+]

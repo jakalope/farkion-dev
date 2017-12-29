@@ -1,0 +1,4 @@
+GIMP 2.8.20 Python Console
+Python 2.7.8 (default, Jul 16 2016, 22:25:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)]
+>>> item = pdb.gimp_item_transform_perspective(item, 0, 0, 2442, 0, 627, 1458, 1732, 1458)
