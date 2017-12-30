@@ -192,8 +192,7 @@ MBS.MobileDirPad = {};
 			} else if (rect.contains(TouchInput.x,TouchInput.y) && TouchInput.x - rect.x < s) {
 				Input._currentState['left'] = true;
 				this._lastDir = 'left';
-			}
-
+			} 
 			if (rect.contains(TouchInput.x,TouchInput.y) && TouchInput.y - rect.y > s * 2) {
 				Input._currentState['down'] = true;
 				this._lastDir += ' down';
@@ -201,12 +200,7 @@ MBS.MobileDirPad = {};
 				Input._currentState['up'] = true;
 				this._lastDir += ' up';
 			}
-
 			this._lastDir = this._lastDir.trim();
-
-            if (this._lastDir.length > 0) {
-                Input._currentState['allowMapPress'] = false;
-            }
 		}
 	};
 
@@ -266,13 +260,11 @@ MBS.MobileDirPad = {};
 		if (this._type == 0 && TouchInput.isPressed()) {
 			var rect = new PIXI.Rectangle(this.x - this.width * this.anchor.x, this.y - this.height * this.anchor.y, this.width, this.height);
 			Input._currentState['ok'] = rect.contains(TouchInput.x, TouchInput.y);
-            Input._currentState['allowMapPress'] = false;
 		} else if (this._type == 0) {
 			Input._currentState['ok'] = false;
 		} else if (this._type == 1 && TouchInput.isTriggered()) {
 			var rect = new PIXI.Rectangle(this.x - this.width * this.anchor.x, this.y - this.height * this.anchor.y, this.width, this.height);
 			Input._currentState['escape'] = rect.contains(TouchInput.x, TouchInput.y);
-            Input._currentState['allowMapPress'] = false;
 		} else if (this._type == 1) {
 			Input._currentState['escape'] = false;
 		}
@@ -391,14 +383,7 @@ MBS.MobileDirPad = {};
 	};
 
 	Scene_Map.prototype.processMapTouch = function() {
-		if (!(Input._currentState['left'] ||
-              Input._currentState['right'] ||
-              Input._currentState['up'] ||
-              Input._currentState['down'] ||
-              Input._currentState['ok'] ||
-              Input._currentState['cancel'])) {
-            Scene_Map_processMapTouch.apply(this, arguments);
-        }
+		if (!(this.isMobileDevice() && Scene_Base.dirpad)) Scene_Map_processMapTouch.apply(this, arguments);
 	};
 
 	//-----------------------------------------------------------------------------
